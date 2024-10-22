@@ -49,5 +49,4 @@ if st.button("Reset Seats"):
     ROWS = 5
     COLUMNS = 8
     st.session_state.seats = [[0 for _ in range(COLUMNS)] for _ in range(ROWS)]
-    st.experimental_set_query_params()
-    st.experimental_rerun()
+    st.experimental_set_query_params()  # This is optional to refresh the UI, but not mandatory
